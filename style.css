@@ -1,0 +1,315 @@
+:root{
+    --white: #ddd;
+    --dark: #111;
+    --darkGrey: #474b4f;
+    --lightGrey: #6b6e70;
+    --lightGreen: #86c232;
+    --darkGreen: #61892f;
+    --transition: all 0.5s ease;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    font-style: none;
+}
+body{
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+/* Header */
+header{
+   
+    height: 100vh;
+}
+/* nav */
+.NavBar{
+text-align: center;
+display: flex;
+justify-content: space-around;
+}
+.ImgNavBar{
+    height: 20vh;
+    width: 10vw;
+    background-image: url('./img/LogoLight.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.NavBar >ul{
+ 
+    flex-direction: row-reverse;
+    margin-top: 4% ;
+    width: 40%;
+    margin-left: 10%;
+    gap: 4%;
+    display: flex;
+    list-style: none;
+    font-style: none;
+}
+.NavBar >ul>li>a{
+    text-decoration: none;
+    color: #000;
+    transition: all,ease,.3s;
+}
+.NavBar >ul>li> :hover{
+   border-bottom: 2px solid;
+}
+
+/* textContent */
+.ContentHeader{
+    width:100%;
+    height: 80svh;
+    background-image: url('./img/imgHeaderContent.jpg');
+    background-size: cover;
+    background-position: 20vhw;
+    text-align: center;
+}
+.ContentHeader div{
+    align-items: center;
+   justify-content: space-between;
+}
+.ContentHeader>p{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Services */
+#Services{
+    height: 100vh;
+    
+    background-color: #121111;
+    display: flex;
+    flex-direction: row;
+}
+.TextServices{
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+}
+.SlideServices{
+    height: 100vh;
+    width: 70vh;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+.NineHeight{
+    height: 80vh;
+}
+.SlideText{
+    width: 70vh;
+
+}
+.SlideText>h3{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 20px;
+    color: #ddd;
+}
+.SlideText>p{
+    font-size: 12px;
+    color: #ddd;
+}
+
+
+/* Section One:Information */
+.section-one{
+    min-height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "LeftFull RigthInit"
+    ;
+}
+.sec-one-left{
+   
+    margin-right: 5%;
+    grid-area:'LeftFull' ;
+    height: 100vh;
+    cursor: pointer;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url('/img/SectionLeft.jpg') center/cover no-repeat;
+    box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+}
+.sec-one-left div{
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 5%;  
+    margin-bottom: 2%;
+}
+
+.sec-one.left div h3{
+    font-size: 10px;
+    opacity: 0.9;
+   
+
+}
+.sec-one-left div p{
+    font-weight: 300;
+    opacity: 0.8;
+
+}
+.sec-one-left >div>  a> button{
+    margin-bottom: 5%;
+}
+.sec-one-right h3{
+    color: var(--lighGrey);
+}
+.sec-one-right >h3{
+    text-align: center;
+}
+.sec-one-right{
+    grid-area: 'RigthInit';
+}
+.sec-one-right p{
+    opacity: 0.9;
+    font-weight: 300; 
+}
+.sec-one-right >div>  a> button{
+    margin-bottom: 5%;
+}
+.work-imgs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap:15px;
+}
+.work-img-1{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/SectionRigthWorkContente1.jpg')center/contain no-repeat;
+    height: 30vh;
+    transition: var(--transition);
+}
+.work-img-2{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/SectionRigthWorkContente2.jpg')center/contain no-repeat;
+    height: 30vh;
+    transition: var(--transition);
+}
+.work-imgs div:hover{
+    box-shadow: 0 0 8px #000;
+    -webkit-box-shadow:0 0 8px #000;
+    -moz-box-shadow:0 0 8px #000;
+
+}
+/* Politicas da empresas */
+.PoliticaEmpresa{
+    height: 100vh;
+    background-color: #231f1f;
+  
+    
+}
+.ImgPolitica{
+    margin: 0 auto;
+    height: 20vh;
+    width: 10vw;
+    background-image: url('./img/LogoDark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.DisplayPolitica{
+    display: flex;
+    flex-direction: row;
+}
+.TextPolitica{
+    margin-left: 5%;
+    width: 45%;
+    color: aliceblue;
+}
+.ListPoliticas{
+    width: 100%;
+    color: white;
+    list-style: none;
+    
+}
+.DescriptionPolitica{
+  margin-bottom: 2%;
+}
+.ListPoliticas1{
+    width: 40%;
+    color: white;
+    list-style: none;
+}
+/* Contact */
+.section-five{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.contact-top{
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact-top h3{
+    font-size: 28px;
+}
+.contact-top p{
+    font-weight: 300;
+
+    margin: 0 auto;
+}
+.contact-middle{
+    margin-right: 5%;
+}
+.contact-middle div{
+ text-align: center; 
+ padding: 25px 0;
+ background: var(--dark);
+ color:#fff;
+ margin-bottom: 10%;
+
+
+}
+.contact-middle div span{
+    display: block;
+}
+.contact-icon{
+    font-size: 30px;
+}
+.contact-middle div span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-middle div p{
+    font-weight:300 ;
+    opacity: 0.7;
+}
+/* Footer */
+footer{
+    height: 30vh;
+    background-color:#231f1f;
+  
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
+}
+.BannerSobre{
+    background-image: url('./img/LogoDark.png');
+    width: 5vw;
+    height: 5vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+footer>div{
+    margin-top: 2%;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer>span{
+    background-color:#231f1f
+}
