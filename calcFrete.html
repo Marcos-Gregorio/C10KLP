@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculador de Frete</h1>
+    <form>
+      <label for="cep-origem">CEP de origem:</label>
+      <input type="text" id="cep-origem"><br>
+
+      <label for="cep-destino">CEP de destino:</label>
+      <input type="text" id="cep-destino"><br>
+
+      <label for="peso">Peso (em kg):</label>
+      <input type="text" id="peso"><br>
+
+      <label for="comprimento">Comprimento (em cm):</label>
+      <input type="text" id="comprimento"><br>
+
+      <label for="largura">Largura (em cm):</label>
+      <input type="text" id="largura"><br>
+
+      <label for="altura">Altura (em cm):</label>
+      <input type="text" id="altura"><br>
+
+      <button type="button" onclick="calcularFrete()">Calcular Frete</button>
+    </form>
+
+    <div id="resultado"></div>
+    <script >function calcularFrete() {
+        // Obter os valores dos campos do formulário
+        var cepOrigem = document.getElementById("cep-origem").value;
+        var cepDestino = document.getElementById("cep-destino").value;
+        var peso = document.getElementById("peso").value;
+        var comprimento = document.getElementById("comprimento").value;
+        var largura = document.getElementById("largura").value;
+        var altura = document.getElementById("altura").value;
+      
+        // Fazer a requisição à API dos Correios
+        var url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx?";
+        url += "nCdEmpresa=&sDsSenha=&sCepOrigem=" + cepOrigem;
+        url += "&sCepDestino=" + cepDestino + "&nVlPeso=" + peso;
+        url += "&nCdFormato=1&nVlComprimento=" + comprimento;
+        url += "&nVlAltura=" + altura + "&nVlLargura=" + largura;
+        url += "&sCdMaoPropria=n&nVlValorDeclarado=0&sCdAvisoRecebimento=n";
+        url += "&nCdServico=40010,41106"; // PAC e Sedex
+        url += "&nVlDiametro=0&StrRetorno=xml";
+      
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Extrair o valor do frete da resposta da API
+              var parser = new DOMParser();
+              var xml = parser.parseFromString(xhr.responseText, "text/xml");
+              var valorFrete = xml.getElementsByTagName("Valor")[0].textContent;
+      
+              // Exibir o resultado na página
+              var resultado = document.getElementById("resultado");
+              resultado.innerHTML = "O valor do frete é R$ " + valorFrete;
+            } else {
+              console.log("Erro ao calcular o frete.");
+            }
+          }
+        };
+        xhr.send();
+      }</script>
+</body>
+</html>
