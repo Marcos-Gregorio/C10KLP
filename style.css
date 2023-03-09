@@ -431,14 +431,15 @@ footer>span{
    
     header{
         width:100vw;
-        height:100vh;
+        height:130vh;
     }
     .ContentHeader{
         width: 100vw;
-        height: 100vh;
+        height: 110vh;
         font-size: 12px;
         background-size:cover ;
-        background-position: -45vw ;
+        background-repeat: no-repeat;
+        background-position:  -35vw;
         margin-bottom: 5%;
     }
     #Services{
@@ -510,14 +511,20 @@ footer>span{
 
     .section-five{
         flex-direction: column;
+        text-align: center;
     }
     .contact-top >iframe{
         width: 90%;
+        margin-bottom: 5%;
     }
     footer{
-        height: 20vh;
+        height: 40vh;
+        font-size: 9px;
     }
+    .HorarioFuction >h1{
+        font-size: 20px;
 
+    }
 
 }
 @media (max-width:375px){
