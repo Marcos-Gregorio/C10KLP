@@ -13,7 +13,7 @@ formMotor.addEventListener('submit', function (event) {
 
   calcDistance(origin, destination, function (distance) {
     var shippingCost = distance * 2.5; // 1.5 reais por km
-    resultDiv.innerHTML = 'Distância: ' + distance.toFixed(2) + ' km<br>Valor do frete: R$' + shippingCost.toFixed(2);
+    resultDiv.innerHTML = `<div class='DisplayModalAll'><p class="DisplayTagD"> Distância: <span class="TagModalKm">${distance.toFixed(2)} km </span></p> <p class="DisplayTagT"> Valor do frete: <span class="TagModalTotal">R$ ${shippingCost.toFixed(2)}</span> </p></div>`;
   });
 });
 
@@ -25,7 +25,7 @@ formCar.addEventListener('submit', function (event) {
 
   calcDistance(origin, destination, function (distance) {
     var shippingCost = distance * 3.5; // 1.5 reais por km
-    resultCar.innerHTML = 'Distância: ' + distance.toFixed(2) + ' km<br>Valor do frete: R$' + shippingCost.toFixed(2);
+    resultCar.innerHTML =`<div class='DisplayModalAll'><p class="DisplayTagD"> Distância: <span class="TagModalKm">${distance.toFixed(2)} km </span></p> <p class="DisplayTagT"> Valor do frete: <span class="TagModalTotal">R$ ${shippingCost.toFixed(2)}</span> </p></div>`;
   });
 });
 

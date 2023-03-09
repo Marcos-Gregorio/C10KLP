@@ -172,10 +172,11 @@ nav {
     height: 100vh;
     width: 40vw;
     cursor: pointer;
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url('/img/SectionLeft.jpg') center/cover no-repeat;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url('/img/SectionLeft.jpeg') center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    background-position: -30vw;
 }
 .sec-one-left div{
     color: #fff;
@@ -183,15 +184,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 5%;  
+    margin-left: 2.5%;  
     margin-bottom: 2%;
 }
 
-.sec-one.left div h3{
+.sec-one.left >div> h3{
     font-size: 10px;
-    opacity: 0.9;
    
-
 }
 .sec-one-left div p{
     font-weight: 300;
@@ -252,6 +251,49 @@ nav {
     box-shadow: 0 0 8px #000;
     -webkit-box-shadow:0 0 8px #000;
     -moz-box-shadow:0 0 8px #000;
+
+}
+/* Modal Config */
+.DisplayModalAll{
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.DisplayTagD{
+    width: 12vw;
+    background: #4e6cff;
+    
+    color: white;
+    padding: 2% 2% 2% 2%;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+.DisplayTagT{
+    width: 15vw;
+    background: #19191a;
+    color: white;
+    padding: 2% 2% 2% 2%;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+.TagModalKm{
+    width: 10vw;
+    background: #2641cc;
+    color: white;
+    padding: 2% 2% 2% 2%;
+    border-radius: 8px;
+    margin-bottom: 2%;
+
+}
+.TagModalTotal{
+    width: 10vw;
+    background: #55565c;
+    color: white;
+    padding: 2% 2% 2% 2%;
+    border-radius: 8px;
+    margin-bottom: 2%;
 
 }
 /* Politicas da empresas */
