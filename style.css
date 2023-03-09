@@ -29,9 +29,7 @@ header{
     height: 100vh;
 }
 /* nav */
-.NavBar{
 
-}
 .ImgNavBar{
     height: 20vh;
     width: 10vw;
@@ -172,11 +170,11 @@ nav {
     height: 100vh;
     width: 40vw;
     cursor: pointer;
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url('/img/SectionLeft.jpeg') center/cover no-repeat;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url('/img/SectionLeft.jpg') center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
-    background-position: -30vw;
+
 }
 .sec-one-left div{
     color: #fff;
@@ -264,7 +262,6 @@ nav {
 .DisplayTagD{
     width: 12vw;
     background: #4e6cff;
-    
     color: white;
     padding: 2% 2% 2% 2%;
     border-radius: 8px;
@@ -517,23 +514,23 @@ footer>span{
         margin-bottom: 3%;
     }
     .sec-one-right{
-        margin-left: 5%;
+        margin-left: 2%;
     }
     .work-content{
         width: 80vw;
         text-align: center;
+        
     }
-    .work-content>p{
-       margin-left: 2%;
-    }
+    
     .work-img-1,.work-img-2{
-        width: 40vw;
+        width: 45vw;
     }
+    
     .PoliticaEmpresa{
-        height: 200vh;
+        height: 190vh;
     }
     .DisplayPolitica{
-        height: 150vh;
+        
         text-align: center;
         flex-direction: column;
     }
@@ -559,6 +556,9 @@ footer>span{
         width: 90%;
         margin-bottom: 5%;
     }
+    .contact-middle{
+        margin-left: 2.5%;
+    }
     footer{
         height: 40vh;
         font-size: 9px;
@@ -567,18 +567,35 @@ footer>span{
         font-size: 20px;
 
     }
+        /* Modal */
+        .DisplayTagD{
+            width: 35vw;
+          
+        }
+        .DisplayTagT{
+            width: 50vw;
+         
+        }
+        .TagModalKm{
+            width: 10vw;
+       
+        
+        }
+        .TagModalTotal{
+            width: 10vw;
+        }
 
 }
 @media (max-width:375px){
   
     header{
         width:100vw;
-        height:100vh;
+        height:120vh;
     }
     .ContentHeader{
-        width: 100vw;
+        height: 120vh;
         background-size:cover ;
-        background-position: -35vw;
+        background-position: -50vw;
         font-size: 12px;
     }
     #Services{
@@ -613,6 +630,10 @@ footer>span{
     .work-img-1,.work-img-2{
         width: 42vw;
     }
+    .PoliticaEmpresa{
+        height: 220vh;
+    }
+
     .section-five{
         flex-direction: column;
     }
@@ -625,8 +646,22 @@ footer>span{
     footer{
         height: 20vh;
     }
-    .contact-middle{
-        margin-right: 0;
+ 
+    /* Modal */
+    .DisplayTagD{
+        width: 35vw;
+      
     }
-  
+    .DisplayTagT{
+        width: 50vw;
+     
+    }
+    .TagModalKm{
+        width: 10vw;
+   
+    
+    }
+    .TagModalTotal{
+        width: 10vw;
+    }
 }
