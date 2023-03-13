@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Armortecedores C10k:peças nacionais e internacionais</title>
     <link rel="stylesheet" href="style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/4b0c82d663.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit.fontawesome.com/4b0c82d663.css" crossorigin="anonymous">
@@ -32,12 +35,12 @@
             </div>
 
            <div class="ContentHeader">
-                    <h1>C10K</h1>
-                    <h2>Loja de amordecedores nacionais e internacionais.</h2>
-                    <p>
+                    <h1 data-aos="fade-up-left" data-aos-duration='1000'>C10K</h1>
+                    <h2 data-aos="fade-up-left" data-aos-duration='1200'>Loja de amordecedores nacionais e internacionais.</h2>
+                    <p data-aos="fade-up-left" data-aos-duration='1500'>
                         A "C10K Loja de Amortecedores Nacionais e Internacionais" é uma loja especializada em amortecedores e molas para veículos de todos os tipos. 
-                        Nos oferecemos uma ampla variedade de produtos nacionais e importados, todos fabricados pelas melhores marcas do mercado.
-                        A  nossa equipe é composta por técnicos experientes e qualificados,capazes de ajudar os clientes a escolherem os amortecedores ideais
+                        Nos oferecemos uma ampla variedade de produtos nacionais e importados,todos fabricados pelas melhores marcas do mercado.
+                        A nossa equipe é composta por técnicos experientes e qualificados,capazes de ajudar os clientes a escolherem os amortecedores ideais
                         para suas necessidades específicas. Eles oferecem atendimento personalizado,analisando as condições de uso do veículo e as preferências
                         do cliente para encontrar os amortecedores mais adequados.
                     </p>
@@ -48,19 +51,19 @@
         </header>
         
         <section id='Services'>
-          <div class="TextServices">
-            <h1>Sobre os nossos Amordecedores</h1>
-            <p>
+          <div class="TextServices" data-aos="flip-up" data-aos-duration='1000'>
+            <h1 data-aos="fade-up-left" data-aos-duration='1500'>Sobre os nossos Amordecedores</h1>
+            <p data-aos="fade-up-left" data-aos-duration='1300'>
                  É feito uma rigorosa seleção de peças, após isso passa por uma lavagem interna e externa.
                  Todos os reparos internos são desmontados e avaliados realizando a regulagem de pressão de
                  cada amortecedor de acordo com cada veiculo.
                  Após isso será fechado com solda mg especial e serão feitos todos os testes um a um e levado
                  para cabine de acabamento para serem utilizados em seu veículo com a garantia de 6 meses.               
             </p>
-            <a href="https://wa.me/5511977970145"><button class="btn btn-outline-success">Fale com os nossos especialista</button></a>
+            <a href="https://wa.me/5511977970145" data-aos="fade-up-right" data-aos-duration='1300'><button class="btn btn-outline-success">Fale com os nossos especialista</button></a>
           
           </div>
-          <div class="SlideServices">
+          <div class="SlideServices" data-aos="flip-left" data-aos-duration='1500'>
                 <div id="CarouselServices" class="carousel slide">
                     
                     <div class="carousel-indicators">
@@ -97,8 +100,7 @@
         
         </section>
 
-        <br>
-        <br>
+        
         <section id ='Information'class="section-one">
             <div class="container">
             
@@ -138,7 +140,7 @@
                     
                         <h3>Calcule o valor do seu frete conosco</h3>
                         <!-- Button trigger modal -->
-                        <button type="button"  class="btn btnModal  btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">      
+                        <button type="button" id="btnModal" class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">      
                           Calcule seu frete Aqui  <i style="font-size: 1.5rem; margin-left: 2%; " class="fa-solid fa-truck-arrow-right"></i> 
                         </button>
   
@@ -181,18 +183,15 @@
                             </div>
                         </div>
                    
-                </div>
-                   
+                </div>      
             </div>
-           
         </section>
-        <br>
-        <br>
+        
         <section id="PoliticaEmpresa" class="PoliticaEmpresa">
             <br>
             <div class="ImgPolitica"></div>
             <div class='DisplayPolitica'>
-            <div class="TextPolitica">
+            <div class="TextPolitica" data-aos="flip-left"data-aos-duration='1000'>
                 <h1>Politicas da Empresa</h1>
                 <p> Bem-vindo à parte de Políticas de Empresa!<br> 
                     Nós nos esforçamos para criar um ambiente      
@@ -202,7 +201,7 @@
                        Por favor, leia atentamente as políticas,
                        listadas abaixo: 
                 </p>
-                <ul class="ListPoliticas">
+                <ul class="ListPoliticas" data-aos="flip-right" data-aos-duration='1500'>
                     
                     <li>
                         <b>Politica de Qualidade</b>
@@ -224,7 +223,7 @@
                     </li>
                 </ul>
             </div>
-            <ul class="ListPoliticas1">
+            <ul class="ListPoliticas1" data-aos="flip-right" data-aos-duration='1500'>
                 <li>
                     <b>
                         Política de Garantia
@@ -257,6 +256,7 @@
    </div>                    
             </div>
         </section>
+        <!-- Contact -->
         <section class="section-five">
                 <div class="contact-top">
                 <h1>Contate me</h1>
@@ -333,11 +333,16 @@
 
         </div>
            
-        <span style="text-align: center;padding-top: 3%;">©2023 por <a style="font-style: none;color: rgb(245, 241, 241);" href="https://dev-marcos.vercel.app/">Marcos Gregorio Vieira</a></span>
+        <span style="text-align: center;">©2023 por <a style="font-style: none;color: rgb(245, 241, 241);" href="https://dev-marcos.vercel.app/">Marcos Gregorio Vieira</a></span>
     </footer>
     <!-- Script -->
     <script src="./script/calc.js"></script>
     <script src="./script/navAction.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init()
+    </script>
     <!-- BootStrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
