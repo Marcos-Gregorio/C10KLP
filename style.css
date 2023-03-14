@@ -560,11 +560,12 @@ footer>span{
     .contact-top{
         text-align: center;
     }
-    .contact-top>ul>li{
-        margin-right: 5%;
+    .contact-top>h1,.contact-top>p,.contact-top>ul{
+        margin-left: 10%;
     }
+   
     .contact-top >iframe{
-        width: 95%;
+        width: 90vw;
     }
     .contact-middle>div{
         width: 100%;
@@ -660,6 +661,9 @@ footer>span{
     .contact-top{
         text-align: center;
     }
+    .contact-top>h1,.contact-top>p,.contact-top>ul{
+        margin-left: 10%;
+    }
     .contact-top >iframe{
         width: 90vw;
     }
@@ -699,6 +703,9 @@ footer>span{
     }
     #PoliticaEmpresa{
         height: 120vh;
+    }
+    .contact-top>h1,.contact-top>p,.contact-top>ul{
+        margin-left: 10%;
     }
 }
 @media (max-width:412px){
@@ -789,6 +796,9 @@ footer>span{
         width: 90%;
         text-align: center;
         margin:0 auto;
+    }
+    .contact-top>h1,.contact-top>p,.contact-top>ul{
+        margin-left: 2%;
     }
     .contact-top >iframe{
         width: 100%;
