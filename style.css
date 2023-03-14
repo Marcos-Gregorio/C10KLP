@@ -728,6 +728,11 @@ footer>span{
     header{
         height: 80vh;
     }
+    .DivButtonWpp{
+        width: 3.5vw;
+        height: 3.5vh;
+
+    }
     .ContentHeader{
         background-position: -40vh;
         height: 80vh;
