@@ -617,7 +617,8 @@ footer>span{
         flex-direction: column;
     }
     .sec-one-left{
-        width: 90vw;         
+        width: 90vw; 
+        margin-left: 2.5%;        
         margin-bottom: 3%;
     }
     .sec-one-right{
@@ -678,7 +679,49 @@ footer>span{
   
 
 }
-@media (max-width:425px){}
+
+@media (max-width:414px){
+    header{
+        height: 80vh;
+    }
+    .ContentHeader{
+        background-position: -40vh;
+        height: 80vh;
+    }
+    #Services{
+        height: 130vh;
+    }
+    .section-one{
+        height: 170vh;
+    }
+    .work-img-1,.work-img-2{
+        height: 40vh;
+    }
+    #PoliticaEmpresa{
+        height: 120vh;
+    }
+}
+@media (max-width:412px){
+    header{
+        height: 80vh;
+    }
+    .ContentHeader{
+        background-position: -40vh;
+        height: 80vh;
+    }
+    #Services{
+        height: 130vh;
+    }
+    .section-one{
+        height: 170vh;
+    }
+    .work-img-1,.work-img-2{
+        height: 40vh;
+    }
+    #PoliticaEmpresa{
+        height: 120vh;
+    }
+}
 
 @media (max-width:375px){
    
@@ -687,14 +730,13 @@ footer>span{
         height:120vh;
     }
     .ContentHeader{
-    
         height: 120vh;
         background-size:cover ;
         background-position: -54vw;
         font-size: 12px;
     }
     #Services{
-        height: 160vh;
+        height: 145vh;
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -714,6 +756,9 @@ footer>span{
     .container{
         display: flex;
         flex-direction: column;
+    }
+    .section-one{
+        height: 190vh;
     }
     .sec-one-left{
         width: 90%;
@@ -735,13 +780,15 @@ footer>span{
         height: 180vh;
     }
     .DisplayPolitica{
-        height: 130vh;
+        font-size: 10px;
     }
     .section-five{
         flex-direction: column;
     }
     .contact-top{
+        width: 90%;
         text-align: center;
+        margin:0 auto;
     }
     .contact-top >iframe{
         width: 100%;
@@ -750,7 +797,7 @@ footer>span{
         margin-right: 20%;
     }
     .contact-middle>div{
-        width:95vw;
+        width:90vw;
     }
     footer{
         width: 100vw;
