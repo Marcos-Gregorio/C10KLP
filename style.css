@@ -23,6 +23,22 @@ body{
     display: flex;
     flex-direction: column;
 }
+.DivButtonWpp{
+    position: fixed;
+    width: 2.5vw;
+   
+    height: 2.5vw;
+    text-align: center;
+    background-color: rgb(64, 181, 64);
+    clip-path: circle(50% at 50% 50%);
+    top: 90%;
+    right: 5%;
+}
+.DivButtonWpp>a{
+    font-size: 1.5rem;
+    font-style: none;
+    color: white;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -727,6 +743,22 @@ footer>span{
     }
     #PoliticaEmpresa{
         height: 120vh;
+    }
+    
+    .DisplayTagD{
+        width: 35vw; 
+    }
+
+    .DisplayTagT{
+        width: 50vw;
+    }
+
+    .TagModalKm{
+        width: 10vw;
+    }
+
+    .TagModalTotal{
+        width: 10vw;
     }
 }
 
