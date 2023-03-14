@@ -489,6 +489,7 @@ footer>span{
     #Services{
         height: 110vh;
     }
+  
     #btnModal{
         width: 20vw;
         
@@ -496,6 +497,15 @@ footer>span{
     .PoliticaEmpresa{
         height: 120vh;
     }
+   .contact-top{
+    width: 80%;
+   }
+   .contact-top>iframe{
+    width: 100%;
+   }
+.contact-middle{
+    margin-left: 5%;
+}
     footer>span{
         height: 5vh;
      }
@@ -579,7 +589,7 @@ footer>span{
     .ContentHeader{
         height: 140vh;
         background-size:cover ;
-        background-position: -40vw;
+        background-position: -50vw;
         font-size: 12px;
     }
     #Services{
@@ -650,13 +660,13 @@ footer>span{
         text-align: center;
     }
     .contact-top >iframe{
-        width: 95vw;
+        width: 90vw;
     }
     .contact-middle{
-        margin-right: 5%;
+        margin-right: 10%;
     }
     .contact-middle>div{
-        width: 95vw;
+        width: 90vw;
     }
     footer{
         height: 50vh;
@@ -668,6 +678,8 @@ footer>span{
   
 
 }
+@media (max-width:425px){}
+
 @media (max-width:375px){
    
     header{
