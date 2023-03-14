@@ -542,7 +542,7 @@ footer>span{
    
     }
     .PoliticaEmpresa{
-    height: 150vh;
+    height: 120vh;
     }
     .section-five{
         flex-direction: column;
@@ -563,6 +563,9 @@ footer>span{
         margin-left: 5%;
         margin-top: 10%;
     }
+    .work-img-1,.work-img-2{
+        height: 60vh;
+    }
     footer{
         height: 40vh;
     }
@@ -580,7 +583,7 @@ footer>span{
         font-size: 12px;
     }
     #Services{
-        height: 185vh;
+        height: 150vh;
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -609,6 +612,7 @@ footer>span{
     }
     .sec-one-right{
         width: 90%;
+        
        text-align: center;
     }
     .work-content>{
@@ -622,7 +626,7 @@ footer>span{
         
     }
     .PoliticaEmpresa{
-        height: 220vh;
+        height: 170vh;
         width: 100vw;
     }
     .DisplayPolitica{
@@ -646,13 +650,16 @@ footer>span{
         text-align: center;
     }
     .contact-top >iframe{
-        width: 100vw;
+        width: 95vw;
+    }
+    .contact-middle{
+        margin-right: 5%;
     }
     .contact-middle>div{
-        width: 100vw;
+        width: 95vw;
     }
     footer{
-        height: 60vh;
+        height: 50vh;
     }
     .SobreNos{
     display: flex;
@@ -662,19 +669,20 @@ footer>span{
 
 }
 @media (max-width:375px){
-  
+   
     header{
         width:100vw;
-        height:190vh;
+        height:120vh;
     }
     .ContentHeader{
-        height: 180vh;
+    
+        height: 120vh;
         background-size:cover ;
         background-position: -54vw;
         font-size: 12px;
     }
     #Services{
-        height: 185vh;
+        height: 160vh;
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -701,16 +709,21 @@ footer>span{
         margin-bottom: 3%;
     }
     .sec-one-right{
+        margin-top: 5%;
         margin-left: 5%;
-    }
+    } 
+ 
     .work-img-1,.work-img-2{
         width: 42vw;
+        height: 50vh;
+        
     }
     .PoliticaEmpresa{
-        height: 240vh;
+        width: 100vw;
+        height: 160vh;
     }
     .DisplayPolitica{
-        height: 150vh;
+        height: 130vh;
     }
     .section-five{
         flex-direction: column;
@@ -721,14 +734,18 @@ footer>span{
     .contact-top >iframe{
         width: 100%;
     }
+    .contact-middle{
+        margin-right: 20%;
+    }
     .contact-middle>div{
         width:95vw;
     }
     footer{
         width: 100vw;
-        height: 60vh;
+        height: 42vh;
     }
     .SobreNos{
+        margin-left: 2%;
         width: 100vw;
     }
   
