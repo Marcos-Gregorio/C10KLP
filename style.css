@@ -26,7 +26,6 @@ body{
 .DivButtonWpp{
     position: fixed;
     width: 2.5vw;
-
     height: 2.5vw;
     text-align: center;
     background-color: rgb(64, 181, 64);
@@ -177,7 +176,7 @@ nav {
 
 /* Section One:Information */
 .section-one{
-    min-height: 100vh;
+    min-height: 120vh;
 }
 .container{
     display: grid;
@@ -189,7 +188,7 @@ nav {
    
     margin-right: 5%;
     grid-area:'LeftFull' ;
-    height: 100vh;
+    height: 115vh;
     width: 40vw;
     cursor: pointer;
     background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url('/img/SectionLeft.jpg') center/cover no-repeat;
@@ -241,6 +240,7 @@ nav {
     margin-bottom: 5%;
 }
 .work-imgs{
+  margin-top: 2%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   column-gap: 2%;
@@ -249,17 +249,33 @@ nav {
 }
 .work-img-1{
    
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/SectionRigthWorkContente1.jpg')center/contain no-repeat;
-    height: 50vh;
-    width: 20vw;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('/img/Cars/Corsa/CorsaD.jpg')center/contain no-repeat;
+    height: 20vh;
+    width: 24vw;
     transition: var(--transition);
 }
 .work-img-2{
-    height: 50vh;
-    width: 20vw;
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/SectionRigthWorkContente2.jpg')center/contain no-repeat;
+    height: 20vh;
+    width: 24vw;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/Cars/Corsa/CorsaT.jpg')center/contain no-repeat;
 
     transition: var(--transition);
+}
+.work-img-3{
+     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/Cars/Onix/AmortecedorT.jfif')center/contain no-repeat;
+}
+.work-img-4{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/Cars/Onix/onixF.webp')center/contain no-repeat;
+}
+.work-img-5{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/Cars/PalioF/02.jfif')center/contain no-repeat;
+}
+.work-img-6{
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/Cars/PalioF/01.jfif')center/contain no-repeat;
+}
+.work-img-3,.work-img-4,.work-img-5,.work-img-6{
+    height: 20vh;
+    width: 24vw;
 }
 .work-imgs>h3{
     width: 100%;
@@ -489,24 +505,24 @@ footer>span{
     }
     .menu {
         display: none;
-      }
+    }
       
-      .toggle {
+    .toggle {
         display: block;
         margin-bottom:15vh; 
        
-      }
+    }
       
-      .toggle i {
+    .toggle i {
         font-size: 1.5rem;
         color: #131111;
         
-      }
+    }
     
-      .menu li {
+    .menu li {
         display: block;
         margin: 10px 0;
-      }
+    }
     #Services{
         height: 110vh;
     }
@@ -524,9 +540,9 @@ footer>span{
    .contact-top>iframe{
     width: 100%;
    }
-.contact-middle{
-    margin-left: 5%;
-}
+    .contact-middle{
+        margin-left: 5%;
+    }
     footer>span{
         height: 5vh;
      }
