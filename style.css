@@ -258,9 +258,9 @@ nav {
     height: 20vh;
     width: 24vw;
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/Cars/Corsa/CorsaT.jpg')center/contain no-repeat;
-
     transition: var(--transition);
 }
+
 .work-img-3{
      background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),url('./img/Cars/Onix/AmortecedorT.jfif')center/contain no-repeat;
 }
@@ -919,16 +919,16 @@ footer>span{
    
     header{
         width:100vw;
-        height:120vh;
+        height:200vh;
     }
     .ContentHeader{
-        height: 120vh;
+        height: 180vh;
         background-size:cover ;
-        background-position: -74vw;
+        background-position: -80vw;
         font-size: 12px;
     }
     #Services{
-        height: 160vh;
+        height: 180vh;
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -950,7 +950,7 @@ footer>span{
         flex-direction: column;
     }
     .section-one{
-        height: 220vh;
+        height: 550vh;
     }
     .sec-one-left{
         width: 90%;
@@ -961,11 +961,18 @@ footer>span{
         margin-top: 5%;
         margin-left: 5%;
     } 
+    .work-imgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
  
-    .work-img-1,.work-img-2{
-        width: 42vw;
+    .work-img-1,.work-img-3,.work-img-2,.work-img-4,.work-img-5,.work-img-6{
+        width: 80vw;
         height: 50vh;
-        
+    }
+    #btnModal{
+        margin-left: 22vw;
     }
     .PoliticaEmpresa{
         width: 100vw;
@@ -1003,9 +1010,6 @@ footer>span{
         margin-left: 2%;
         width: 100vw;
     }
-  
-    
-
     .DisplayTagD{
         width: 35vw; 
     }
