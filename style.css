@@ -631,188 +631,20 @@ footer>span{
       }
   
 }
-@media (max-width:425px){
+@media (max-width:426px){
     header{
-        width:100vw;
-        height:140vh;
+        width:125vw;
+        height:100vh;
     }
     .ContentHeader{
-        height: 140vh;
-        background-size: cover;
+        width: 100%;
+        height: 160vh;
+        background-size:cover ;
         background-position: -40vw;
         font-size: 12px;
     }
     #Services{
-        height: 150vh;
-        
-        flex-direction: column;
-        align-items: center; 
-    }
-    .TextServices{
-        margin-right: 5%;
-    }
-    .SlideServices{
-        width: 90vw;
-       margin-left: 10%; 
-    }
-    .SlideText{
-        text-align: center;
-        width: 90vw;
-    }
-    .section-one{
-        height: 210vh;
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .sec-one-left{
-        width: 90vw; 
-        margin-left: 2.5%;        
-        margin-bottom: 3%;
-    }
-    .sec-one-right{
-        width: 90%;
-        
-       text-align: center;
-    }
-    .work-content>{
-        margin-right:10% ;
-    }
-    .work-img-1,.work-img-2{
-        width: 42vw;
-    }
-    #btnModal{
-        width: 42vw;
-        
-    }
-    .PoliticaEmpresa{
-        height: 170vh;
-        width: 100vw;
-    }
-    .DisplayPolitica{
-        width: 90%;
-        flex-direction: column;
-    }
-    .TextPolitica{
-        width: 100%;
-        margin-left: 5%;
-        
-    }
-    .ListPoliticas1{
-        width: 100%;
-        margin-left: 5%;
-    }
-
-    .section-five{
-        flex-direction: column;
-    }
-    .contact-top{
-        text-align: center;
-    }
-    .contact-top>h1,.contact-top>p,.contact-top>ul{
-        margin-left: 10%;
-    }
-    .contact-top >iframe{
-        width: 90vw;
-    }
-    .contact-middle{
-        margin-right: 10%;
-    }
-    .contact-middle>div{
-        width: 90vw;
-    }
-    footer{
-        height: 50vh;
-    }
-    .SobreNos{
-    display: flex;
-    flex-direction: column;
-    }
-  
-
-}
-
-@media (max-width:414px){
-    header{
-        height: 80vh;
-    }
-    .ContentHeader{
-        background-position: -40vh;
-        height: 80vh;
-    }
-    #Services{
-        height: 130vh;
-    }
-    .section-one{
-        height: 170vh;
-    }
-    .work-img-1,.work-img-2{
-        height: 40vh;
-    }
-    #PoliticaEmpresa{
-        height: 120vh;
-    }
-    .contact-top>h1,.contact-top>p,.contact-top>ul{
-        margin-left: 10%;
-    }
-}
-@media (max-width:412px){
-    header{
-        height: 80vh;
-    }
-    .DivButtonWpp{
-        width: 8vw;
-        height: 4vh;
-        
-    }
-    .ContentHeader{
-        background-position: -40vh;
-        height: 80vh;
-    }
-    #Services{
-        height: 130vh;
-    }
-    .section-one{
-        height: 170vh;
-    }
-    .work-img-1,.work-img-2{
-        height: 40vh;
-    }
-    #PoliticaEmpresa{
-        height: 120vh;
-    }
-    
-    .DisplayTagD{
-        width: 35vw; 
-    }
-
-    .DisplayTagT{
-        width: 50vw;
-    }
-
-    .TagModalKm{
-        width: 10vw;
-    }
-
-    .TagModalTotal{
-        width: 10vw;
-    }
-}
-
-@media (max-width:376px){
-   
-    header{
-        width:100vw;
-        height:120vh;
-    }
-    .ContentHeader{
-        height: 120vh;
-        background-size:cover ;
-        background-position: -74vw;
-        font-size: 12px;
-    }
-    #Services{
+        width: 125vw;
         height: 160vh;
         display: flex;
         flex-direction: column;
@@ -835,7 +667,8 @@ footer>span{
         flex-direction: column;
     }
     .section-one{
-        height: 220vh;
+        width: 125vw;
+        height: 550vh;
     }
     .sec-one-left{
         width: 90%;
@@ -847,14 +680,395 @@ footer>span{
         margin-left: 5%;
     } 
  
-    .work-img-1,.work-img-2{
-        width: 42vw;
+    .work-imgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+ 
+    .work-img-1,.work-img-3,.work-img-2,.work-img-4,.work-img-5,.work-img-6{
+        margin-top: 2%;
+        width: 107vw;
         height: 50vh;
+    }
+    #btnModal{
+        
+        width: 50vw;
+    }
+    #PoliticaEmpresa{
+        width: 125vw;
+        height: 120vh;
+    }
+    .DisplayPolitica{
+        font-size: 10px;
+      
+    }
+    .section-five{
+        width: 125vw;
+        flex-direction: column;
+    }
+    .contact-top{
+        width: 90%;
+        text-align: center;
+        margin:0 auto;
+    }
+    .contact-top>h1,.contact-top>p,.contact-top>ul{
+        margin-left: 2%;
+    }
+    .contact-top >iframe{
+        width: 100%;
+    }
+    .contact-middle{
+        margin-left: 10%;
+    }
+    .contact-middle>div{
+        width:100vw;
+    }
+    footer{
+        width: 125vw;
+        height: 50vh;
+    }
+    .SobreNos{
+        margin-left: 2%;
+        width: 100vw;
+    }
+  
+    
+
+    .DisplayTagD{
+        width: 35vw; 
+    }
+
+    .DisplayTagT{
+        width: 50vw;
+    }
+
+    .TagModalKm{
+        width: 10vw;
+    }
+
+    .TagModalTotal{
+        width: 10vw;
+    }
+    .DivButtonWpp{
+        width: 14vw;
+        font-size:27px;
+        height: 10vh;
         
     }
-    .PoliticaEmpresa{
+}
+
+@media (max-width:414px){
+    header{
+        width:125vw;
+        height:100vh;
+    }
+    .ContentHeader{
+        width: 100%;
+        height: 160vh;
+        background-size:cover ;
+        background-position: -40vw;
+        font-size: 12px;
+    }
+    #Services{
+        width: 125vw;
+        height: 160vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    .TextServices{
+        margin-right: 5%;
+    }
+    .SlideServices{
+        width: 90vw;
+       margin-left: 10%; 
+    }
+    .SlideText{
+        text-align: center;
+        width: 90vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-one{
+        width: 125vw;
+        height: 550vh;
+    }
+    .sec-one-left{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    .sec-one-right{
+        margin-top: 5%;
+        margin-left: 5%;
+    } 
+ 
+    .work-imgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+ 
+    .work-img-1,.work-img-3,.work-img-2,.work-img-4,.work-img-5,.work-img-6{
+        margin-top: 2%;
+        width: 107vw;
+        height: 50vh;
+    }
+    #btnModal{
+        
+        width: 50vw;
+    }
+    #PoliticaEmpresa{
+        width: 125vw;
+        height: 120vh;
+    }
+    .DisplayPolitica{
+        font-size: 10px;
+      
+    }
+    .section-five{
+        width: 125vw;
+        flex-direction: column;
+    }
+    .contact-top{
+        width: 90%;
+        text-align: center;
+        margin:0 auto;
+    }
+    .contact-top>h1,.contact-top>p,.contact-top>ul{
+        margin-left: 2%;
+    }
+    .contact-top >iframe{
+        width: 100%;
+    }
+    .contact-middle{
+        margin-left: 10%;
+    }
+    .contact-middle>div{
+        width:100vw;
+    }
+    footer{
+        width: 130vw;
+        height: 50vh;
+    }
+    .SobreNos{
+        margin-left: 2%;
         width: 100vw;
-       max-width: 300vh;
+    }
+  
+    .DisplayTagD{
+        width: 35vw; 
+    }
+
+    .DisplayTagT{
+        width: 50vw;
+    }
+
+    .TagModalKm{
+        width: 10vw;
+    }
+
+    .TagModalTotal{
+        width: 10vw;
+    }
+    .DivButtonWpp{
+        width: 14vw;
+        font-size:27px;
+        height: 10vh;
+        
+    }
+}
+@media (max-width:412px){
+    header{
+        width:125vw;
+        height:130vh;
+    }
+    .ContentHeader{
+        width: 100%;
+        height: 160vh;
+        background-size:cover ;
+        background-position: -40vw;
+        font-size: 12px;
+    }
+    #Services{
+        width: 125vw;
+        height: 160vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    .TextServices{
+        margin-right: 5%;
+    }
+    .SlideServices{
+        width: 90vw;
+       margin-left: 10%; 
+    }
+    .SlideText{
+        text-align: center;
+        width: 90vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-one{
+        width: 125vw;
+        height: 550vh;
+    }
+    .sec-one-left{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    .sec-one-right{
+        margin-top: 5%;
+        margin-left: 5%;
+    } 
+ 
+    .work-imgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+ 
+    .work-img-1,.work-img-3,.work-img-2,.work-img-4,.work-img-5,.work-img-6{
+        margin-top: 2%;
+        width: 107vw;
+        height: 50vh;
+    }
+    #btnModal{
+        
+        width: 50vw;
+    }
+    #PoliticaEmpresa{
+        width: 125vw;
+        height: 120vh;
+    }
+    .DisplayPolitica{
+        font-size: 10px;
+      
+    }
+    .section-five{
+        width: 125vw;
+        flex-direction: column;
+    }
+    .contact-top{
+        width: 90%;
+        text-align: center;
+        margin:0 auto;
+    }
+    .contact-top>h1,.contact-top>p,.contact-top>ul{
+        margin-left: 2%;
+    }
+    .contact-top >iframe{
+        width: 100%;
+    }
+    .contact-middle{
+        margin-left: 10%;
+    }
+    .contact-middle>div{
+        width:100vw;
+    }
+    footer{
+        width: 130vw;
+        height: 50vh;
+    }
+    .SobreNos{
+        margin-left: 2%;
+        width: 100vw;
+    }
+  
+    .DisplayTagD{
+        width: 35vw; 
+    }
+
+    .DisplayTagT{
+        width: 50vw;
+    }
+
+    .TagModalKm{
+        width: 10vw;
+    }
+
+    .TagModalTotal{
+        width: 10vw;
+    }
+    .DivButtonWpp{
+        width: 14vw;
+        font-size:27px;
+        height: 10vh;
+    }
+}
+
+@media (max-width:376px){
+   
+    header{
+        width:100vw;
+        height:200vh;
+    }
+    .ContentHeader{
+        height: 180vh;
+        background-size:cover ;
+        background-position: -74vw;
+        font-size: 12px;
+    }
+    #Services{
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    .TextServices{
+        margin-right: 5%;
+    }
+    .SlideServices{
+        width: 90vw;
+       margin-left: 10%; 
+    }
+    .SlideText{
+        text-align: center;
+        width: 90vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-one{
+        height: 550vh;
+    }
+    .sec-one-left{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    .sec-one-right{
+        margin-top: 5%;
+        margin-left: 5%;
+    } 
+ 
+    .work-imgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+ 
+    .work-img-1,.work-img-3,.work-img-2,.work-img-4,.work-img-5,.work-img-6{
+        width: 85vw;
+        height: 50vh;
+    }
+    #btnModal{
+        margin-left: 22vw;
+        width: 50vw;
+    }
+    #PoliticaEmpresa{
+        height: 150vh;
     }
     .DisplayPolitica{
         font-size: 10px;
@@ -882,7 +1096,7 @@ footer>span{
     }
     footer{
         width: 100vw;
-        height: 42vh;
+        height: 50vh;
     }
     .SobreNos{
         margin-left: 2%;
@@ -951,6 +1165,7 @@ footer>span{
     }
     .section-one{
         height: 550vh;
+        width: 170vw;
     }
     .sec-one-left{
         width: 90%;
@@ -961,6 +1176,14 @@ footer>span{
         margin-top: 5%;
         margin-left: 5%;
     } 
+    .DisplayBtnContact{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .DisplayBtnContact>a{
+        margin-bottom: 2%;
+    }
     .work-imgs{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -974,16 +1197,20 @@ footer>span{
     #btnModal{
         margin-left: 22vw;
     }
-    .PoliticaEmpresa{
-        width: 100vw;
-       max-width: 300vh;
+    #PoliticaEmpresa{
+        height: 170vh;
+        width: 170vw;
+       
     }
     .DisplayPolitica{
         font-size: 10px;
+        height: 200vh;
+        width: 170vw;
       
     }
     .section-five{
         flex-direction: column;
+        width: 170vw;
     }
     .contact-top{
         width: 90%;
@@ -1003,7 +1230,7 @@ footer>span{
         width:90vw;
     }
     footer{
-        width: 100vw;
+        width: 170vw;
         height: 42vh;
     }
     .SobreNos{
